@@ -1,0 +1,6 @@
+﻿@model BurgerDetailsViewModel
+@*using a partial view for BurgerDetails*@
+<partial name="~/Views/Shared/Partials/_BurgerDetailsPartial.cshtml" for="@Model" />
+<div>
+    <a asp-controller="Burger" asp-action="Index">Back to orders</a>
+</div>

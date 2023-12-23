@@ -1,0 +1,31 @@
+﻿@model BurgerDetailsViewModel
+
+<h3 style="color:white">Add a new Burger to the menu!</h3>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddNewBurgerPost" method="post">
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label" style="color:white">Burger name:</label>
+                <input asp-for="Name" class="form-control"></input>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Price" class="control-label" style="color:white"></label>
+                <input type="number" asp-for="Price" />
+            </div>
+
+            <div>
+                <label asp-for="HasFries" class="control-label" style="color:white">Includes Fries:</label>
+                <input type="checkbox" asp-for="HasFries" />
+            </div>
+            <div>
+                <label asp-for="IsVegan" class="control-label" style="color:white">Is Vegan:</label>
+                <input type="checkbox" asp-for="IsVegan" />
+            </div>
+
+            <button type="submit" class="btn btn-default" style="color:white">Add burger</button>
+            <a asp-controller="Burger" asp-action="Index" style="color:white">Go back</a>
+        </form>
+    </div>
+</div>

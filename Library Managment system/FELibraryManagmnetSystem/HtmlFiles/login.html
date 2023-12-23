@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link href="../CSSfiles/login.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+  <body id="body">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Library Management System</a>
+          <a class="navbar-brand" href="register.html">Register</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+        </div>
+      </nav>
+    
+
+    <form id="loginForm">
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input type="text" class="form-control" id="username" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="pass" class="form-label">Password</label>
+          <input type="password" class="form-control" id="pass">
+        </div>
+        <button type="submit" class="btn btn-primary" id="loginBtn">Log in</button>
+      </form>
+      <br>
+
+      <div class="card text-bg-danger mb3" style="width: 400px;" style="margin: auto;" id="errorMessage">
+        <div class="card-body">
+          <p class="card-text">An error occured, are you sure you are using the correct username and password?Try again.</p>
+        </div>
+      </div>
+	
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="../JSFiles/login.js"></script>
+    
+</body>
+</html>

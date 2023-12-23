@@ -1,0 +1,32 @@
+/* adjusting image size located in the nav bar */
+#beerIcon{
+    width: 50px;
+    height: 50px;
+}
+
+/* styling the div that holds the cardPopulatedDiv */
+#containerDiv{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+/* styling the inner div that holds the cards displaying data */
+#cardPopulatedDiv{
+    margin: auto;
+    position: relative;
+}
+/* styling the button */
+button{
+    color: white;
+    background-color: black;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    border-radius: 5px!important;
+}
+/* adding a simple effect to the button when hovering */
+button:hover{
+    background-color: yellow;
+    color: black;
+}

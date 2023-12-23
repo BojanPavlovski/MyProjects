@@ -1,0 +1,12 @@
+#addUserForm{
+    margin: auto;  
+    width: 400px;
+    padding: 15px;
+    border: 2px solid black;
+}
+
+#errorMessage{
+    visibility: hidden;
+    margin: auto;  
+    width: 400px;
+  }

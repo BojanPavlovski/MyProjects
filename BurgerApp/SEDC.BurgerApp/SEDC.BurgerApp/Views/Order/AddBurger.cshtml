@@ -1,0 +1,20 @@
+﻿@model AddBurgerViewModel
+
+<h2>Add burger to order</h2>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddBurgerPost" method="post">
+            <input type="hidden" asp-for="OrderId" />
+            <div class="form-group">
+                <label asp-for="BurgerId" class="control-label"></label>
+                <select asp-for="BurgerId" class="form-control" asp-items="@(new SelectList(ViewBag.Burgers, "Id", "Name"))"></select>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="NumberOfBurgers" class="control-label"></label>
+                <input type="number" asp-for="NumberOfBurgers" />
+            </div>
+            <button type="submit" class="btn btn-default">Add burger</button>
+        </form>
+    </div>
+</div>

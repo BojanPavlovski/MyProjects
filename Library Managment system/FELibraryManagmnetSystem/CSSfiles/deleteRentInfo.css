@@ -1,0 +1,39 @@
+#delete{
+    margin: auto;  
+    width: 600px;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+#warningMessage{
+    margin: auto;  
+    width: 400px;
+    display: none;
+}
+
+#btnDiv{
+    align-self: center;
+}
+
+#populatedDiv{
+    margin: auto;
+    width: 18rem;
+}
+
+#errorMessage{
+    margin: auto;
+    height: 70px;
+    visibility: hidden;
+}
+
+#successMessage{
+    margin: auto;
+    height: 50px;
+    display: none;
+}
+
+#failedMessage{
+    margin: auto;
+    height: 50px;
+    display: none;
+}

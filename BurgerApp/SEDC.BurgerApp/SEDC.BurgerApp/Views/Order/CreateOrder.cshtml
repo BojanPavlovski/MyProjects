@@ -1,0 +1,35 @@
+﻿@model OrderDetailsViewModel
+
+<h2 style="color:white">Create order</h2>
+
+<div>
+    <div class="col-md-4">
+        <form asp-action="CreateOrderPost" method="post">
+            <div class="form-group">
+                 <input type="hidden" asp-for="Id" />
+                <label asp-for="UserFullName" class="control-label" style="color:white"></label>
+                <input type="text" class="form-control" asp-for="UserFullName" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Id" class="control-label" style="color:white">Burgers: </label>
+                <select class="form-control" asp-for="Id" asp-items="@(new SelectList(ViewBag.Burgers, "Id", "Name"))"></select>
+            </div>
+            <div>
+                <label asp-for="Address" class="control-label" style="color:white">Address</label>
+                <input type="text" asp-for="Address" />
+            </div>
+             <div>
+                <label asp-for="Location" class="control-label" style="color:white">Location</label>
+                <input type="text" asp-for="Location" />
+            </div>
+            <div class="form-group">
+                <label asp-for="isDelivered" class="control-label" style="color:white"></label>
+                <input type="checkbox" asp-for="isDelivered" />
+            </div class="form-group">
+          
+
+
+            <button type="submit" class="btn btn-default" style="color:white">Create</button>
+        </form>
+    </div>
+</div>

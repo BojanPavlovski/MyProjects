@@ -1,0 +1,37 @@
+﻿@model BurgerDetailsViewModel
+
+<h2>Burger Details</h2>
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title"><strong>Burger name:</strong> @Model.Name</h5>
+        <p class="card-text"><strong>Total Price:</strong> @Model.Price <strong> MKD </strong></p>
+    </div>
+
+    <div class="row">
+        <div class="card" style="width: 18rem; margin-left:15px;">
+            <img class="card-img-top" src="https://sallysbakingaddiction.com/wp-content/uploads/2018/07/best-black-bean-burgers-2.jpg" alt="Card image cap">
+            <div class="card-body">
+                @if (Model.HasFries)
+                {
+                    <p><strong>The burger include fries:</strong> Yes.</p>
+                }
+                else
+                {
+                    <p>"><strong>The burger include fries:</strong> No.</p>
+                }
+
+                @if (Model.IsVegan)
+                {
+                    <p><strong>The burger is vegan:</strong> Yes.</p>
+                }
+                else
+                {
+                    <p><strong>The burger is vegan:</strong> No.</p>
+                }
+            </div>
+        </div>
+
+    </div>
+</div>
+
+

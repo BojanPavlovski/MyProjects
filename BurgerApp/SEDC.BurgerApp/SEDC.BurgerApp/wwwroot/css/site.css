@@ -1,0 +1,33 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.informationalDiv{
+    color: white;
+    position:relative;
+    top: 200px;
+}
+
+h2, h3{
+    font-size:40px;
+}
+
+footer{
+    background-color: white;
+    opacity: 80%;
+}

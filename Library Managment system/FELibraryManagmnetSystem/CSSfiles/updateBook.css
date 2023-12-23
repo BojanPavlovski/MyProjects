@@ -1,0 +1,19 @@
+#updateBookForm{
+    margin: auto;  
+    width: 400px;
+    padding: 15px;
+    border: 2px solid black;
+  }
+
+  #errorMessage{
+    visibility: hidden;
+    margin: auto;  
+    width: 400px;
+  }
+
+  #successMessage{
+    visibility: hidden;
+    margin: auto;  
+    width: 400px;
+    height: 100px;
+  }

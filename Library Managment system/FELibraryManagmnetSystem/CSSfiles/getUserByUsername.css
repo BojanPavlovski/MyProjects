@@ -1,0 +1,17 @@
+#showUser{
+    margin: auto;  
+    width: 600px;
+    padding: 15px;
+    border: 2px solid black;
+}
+
+#errorMessage{
+    margin: auto;
+    height: 50px;
+    visibility: hidden;
+}
+
+#populatedDiv{
+    margin: auto;
+    width: 18rem;
+}

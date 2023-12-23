@@ -1,0 +1,4 @@
+#rentInfoDiv{
+    display: flex;
+  flex-wrap: wrap;
+}

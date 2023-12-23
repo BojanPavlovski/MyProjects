@@ -1,0 +1,206 @@
+/* adjusting the background image for the body */
+body{
+    background-image: url('../Images/backgroundImg.jpg');
+    background-size: cover;
+    background-color: black;
+}
+/* adjusting the size of the image located in the nav bar */
+#beerIcon{
+    width: 50px;
+    height: 50px;
+}
+/* using grid to place div center on the page */
+#containerDiv{
+    display: grid;
+}
+/* using grid to place div center on the page */
+#presentingDiv{
+    color: white;
+    width: 500px;
+    height: 200px;
+    background-color: transparent;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+/* styleing the paragraphs */
+.firstPara{
+    padding: 8px;
+    font-size: xx-large;
+    text-align: center;
+    opacity: 80%;
+    background-color: black;
+    border-radius: 15px;
+}
+
+.secondPara{
+    background-color: black;
+    opacity: 80%;
+    text-align: center;
+    border-radius: 15px;
+}
+/* styleing the footer element */
+footer{
+    background-color: black;
+    position: absolute;
+    top: 1000px;
+    width: 100%;
+    height: 30px;
+    color: black;
+    color: whitesmoke;
+    text-align: center;
+}
+/* styling the container that holds the cards */
+#imageContainer{
+    display: flex;
+    justify-content:space-between;
+    width: 1200px;
+    height: auto;
+    position: absolute;
+    top: 500px;
+    left: 160px;
+}
+
+
+/* first card */
+.card{
+   width: 330px;
+   height: 330px;
+   position: relative;
+   background: url(../Images/largeBeerImg.webp);
+   background-size: cover;
+   color: #fff;
+   border-radius: 18px!important;
+}
+
+.card .overlay{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 330px;
+   height: 330px;
+   background: rgba(215, 94, 42, 0.855);
+   opacity: 0;
+   transition: 0.3s;
+   border-radius: 18px;
+   text-align: center;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+    box-shadow: white 0px 8px 11px 0px;
+    text-align: center;
+}
+
+.card .btn{
+   padding: 0.6em 1.3em;
+   text-decoration: none;
+   color: #fff;
+   border: 2px #fff solid;
+   border-radius: 8px;
+}
+
+.card .btn, .card h1{
+   transition: 0.3s;
+   transform: translateY(-20px);
+}
+
+.card:hover .btn, .card:hover h1{
+   transform: translateY(0);
+}
+
+/* second card */
+.secondCard{
+   width: 330px;
+   height: 330px;
+   position: relative;
+   background: url(../Images/beerOnBarImg.jpg);
+   background-size: cover;
+   color: #fff;
+   border-radius: 18px;
+}
+
+.secondCard .secondOverlay{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 330px;
+   height: 330px;
+   background: rgba(217, 53, 38, 0.948);
+   opacity: 0;
+   transition: 0.3s;
+   border-radius: 18px;
+   text-align: center;
+}
+
+.secondCard:hover .secondOverlay {
+    opacity: 1;
+    box-shadow: white 0px 8px 11px 0px;
+    text-align: center;
+}
+
+.secondCard .btn2{
+   padding: 0.6em 1.3em;
+   text-decoration: none;
+   color: #fff;
+   border: 2px #fff solid;
+   border-radius: 8px;
+}
+
+.secondCard .btn2, .secondCard h1{
+   transition: 0.3s;
+   transform: translateY(-20px);
+}
+
+.secondCard:hover .btn2, .secondCard:hover h1{
+   transform: translateY(0);
+}
+
+/* third card */
+.thirdCard{
+   width: 330px;
+   height: 330px;
+   position: relative;
+   background: url(../Images/beerBrandsImg.jpg);
+   background-size: cover;
+   color: #fff;
+   border-radius: 18px;
+}
+
+.thirdCard .thirdOverlay{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 330px;
+   height: 330px;
+   background: rgb(171, 11, 11);
+   opacity: 0;
+   transition: 0.3s;
+   border-radius: 18px;
+   text-align: center;
+}
+
+.thirdCard:hover .thirdOverlay {
+    opacity: 1;
+    box-shadow: white 0px 8px 11px 0px;
+    text-align: center;
+}
+
+.thirdCard .btn3{
+   padding: 0.6em 1.3em;
+   text-decoration: none;
+   color: #fff;
+   border: 2px #fff solid;
+   border-radius: 8px;
+}
+
+.thirdCard .btn3, .thirdCard h1{
+   transition: 0.3s;
+   transform: translateY(-20px);
+}
+
+.thirdCard:hover .btn3, .thirdCard:hover h1{
+   transform: translateY(0);
+}

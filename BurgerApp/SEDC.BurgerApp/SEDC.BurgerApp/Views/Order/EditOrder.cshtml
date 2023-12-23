@@ -1,0 +1,29 @@
+﻿@model OrderDetailsViewModel
+
+<h2>Edit Order</h2>
+
+<div class="row">
+    <div class="col-sm-4">
+        <form asp-action="EditOrderPost" method="post">
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="UserFullName" class="control-label"> User name:</label>
+                <input type="text" asp-for="UserFullName" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="isDelivered" class="control-label">Is delivered: </label>
+                <input type="checkbox" asp-for="isDelivered" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Id" class="control-label">Burgers: </label>
+                <select class="form-control" asp-for="Id" asp-items="@(new SelectList(ViewBag.Burgers, "Id", "Name"))"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Location" class="control-label">Location: </label>
+            <input type="text" asp-for="Location" class="form-control" />
+    </div>
+
+            <button type="submit" class="btn btn-default">Save</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+/* adjusting the size of the image located in the nav menu */
+#beerIcon{
+    width: 50px;
+    height: 50px;
+}
+
+/* organising the position for the outer and inner div  */
+#containerDiv{
+    display: flex;
+}
+#cardPopulatedDiv{
+    margin: auto;
+    position: relative;
+}

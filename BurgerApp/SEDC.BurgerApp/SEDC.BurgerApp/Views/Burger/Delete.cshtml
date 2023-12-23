@@ -1,0 +1,8 @@
+﻿@model BurgerDetailsViewModel
+@*using a partial view for BurgerDetails*@
+<h3>Are you sure you want to delete the burger with the following details:</h3>
+<partial name="~/Views/Shared/Partials/_BurgerDetailsPartial.cshtml" for="@Model" />
+<div>
+    <a asp-controller="Burger" asp-action="ConfirmDelete" asp-route-id="@Model.Id">Delete</a>
+    <a asp-controller="Burger" asp-action="Index">Cancel</a>
+</div>

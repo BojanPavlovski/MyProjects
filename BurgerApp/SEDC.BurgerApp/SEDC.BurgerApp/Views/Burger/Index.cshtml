@@ -1,0 +1,29 @@
+﻿@model List<BurgerListViewModel>
+
+<h3 style="color: white">List of all burgers:</h3>
+<div class="row">
+
+    <div>
+        <a asp-controller="Burger" asp-action="AddBurger">Add Burger</a>
+    </div>
+
+    @foreach (BurgerListViewModel burgerModel in @Model)
+    {
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem; margin-left:10px;">
+            <div class="card-body">
+                <img class="card-img-top" src="https://sallysbakingaddiction.com/wp-content/uploads/2018/07/best-black-bean-burgers-2.jpg" alt="Card image cap">
+                <h5 class="card-title">Name: @burgerModel.Name</h5>
+            </div>
+            <div class="card-footer bg-transparent border-success"> <strong>@burgerModel.Price DEN</strong></div>
+
+            <div style="display:flex position:flex">
+                <a asp-controller="Burger" asp-action="Details" asp-route-id="@burgerModel.Id">Details</a>
+                <a asp-controller="Burger" asp-action="Delete" asp-route-id="@burgerModel.Id">Delete</a>
+                <a asp-controller="Burger" asp-action="Edit" asp-route-id="@burgerModel.Id">Edit</a>
+            </div>
+
+
+
+        </div>
+    }
+</div>
