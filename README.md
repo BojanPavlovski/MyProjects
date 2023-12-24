@@ -3,7 +3,7 @@ of HTML, CSS, JavaScript, Bootstrap, C#, .NET MVC, .NET Web API, and SQL. Each p
 and backend robustness, demonstrating a diverse range of skills and technologies.
 
 1.Beer Web page(HTML, CSS, JavaScript)
-Immerse yourself in a visually appealing and responsive portfolio website, showcasing my skills and projects. 
+Immerse yourself in a visually appealing portfolio website, showcasing my skills and projects. 
 The combination of HTML, CSS, JavaScript, and Bootstrap ensures a seamless and engaging user experience.
 
 2.Burger App(.NET MVC, SQL)
