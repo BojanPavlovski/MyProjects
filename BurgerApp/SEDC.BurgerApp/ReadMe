@@ -1,0 +1,10 @@
+Introducing "Burger App": A .NET MVC Gastronomic Delight with N-Tier Architecture 🍔🖥️
+This burger app is a savory web application meticulously crafted with .NET MVC, exemplifying the finesse of N-Tier architecture. 
+This culinary hub seamlessly integrates with a local SQL database, ensuring robust data management. 
+I have also implemented the pages functionalities using an in-memory list that holds the data, making it easier
+for anyone viewing this project to see and test its CRUD functionalities,offering users a swift and responsive experience.
+The implementations can be easily switched because of the implementation of dependency injection.
+The heart of this project lies in its sophisticated N-Tier architecture, dividing the application into distinct layers for presentation, 
+business logic, and data access.
+The .NET MVC framework orchestrates the flawless interaction between the user interface and the SQL database, 
+while the N-Tier architecture ensures a structured and efficient codebase. 
