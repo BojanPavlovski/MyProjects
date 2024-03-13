@@ -1,0 +1,221 @@
+
+#navMenu{
+    height: auto;
+    width: auto;
+    margin: 0px;
+    display: inline;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#navContainer{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(18, 125, 206);
+}
+
+#navLinks{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+}
+
+#navLinks:hover{
+    color: rgb(220, 222, 91);
+}
+
+#messageDiv{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-image: url("../../Images/palmtreesImg.png");
+    opacity: 95%;
+    height: 677px;
+    position: relative;
+}
+
+#childMessageDiv{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(40px);
+    width: 600px;
+    height: 450px;
+    border-radius: 25px;
+    text-align: center;
+    
+}
+
+
+.firstLine{
+    font-size: 60px;
+    margin: 40px;
+}
+
+.secondLine{
+    font-size: 60px;
+    font-style: italic;
+    margin: 40px;
+}
+
+.thirdLine{
+    font-weight: bolder;
+    font-size: 90px;
+    margin: 40px;
+}
+
+#cardContainer{
+    display: flex;
+    justify-content: center;
+}
+
+#firstImg{
+    width: 100px;
+    height: 200px;
+}
+
+#firstImg, #secondImg, #thirdImg{
+    width: 284px;
+    height: 330px;
+}
+
+#mainCardContainer{
+    width: auto;
+    height: 750px;
+    background-image: url("../../Images/greenGradient.jpg");
+    position: relative;
+}
+
+#cardContainer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cardDiv{
+    background-color: white;
+    text-align: center;
+    width: 18rem;
+    height: 580px;
+    border: 3px solid black;
+    border-top: 23px solid rgb(18, 125, 206);
+
+  }
+
+.cardText{
+    padding: 3px;
+  }
+
+.titleParagraph{
+    font-style: italic;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.cardTitle{
+    color: rgb(18, 125, 206);
+}
+
+#exploreBtn{
+    background-color: rgb(18, 125, 206);
+    color: white;
+    width: 90px;
+    height: 40px;
+    border-radius: 9px;
+    border: 1px solid rgb(18, 125, 206);
+}
+
+#exploreBtn:hover{
+    background-color: rgb(2, 74, 162);
+    color: black;
+    font-size: 16px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(18, 125, 206);
+    height: 55px;
+    align-items: center;
+}
+
+#footerLink{
+    padding: 5px;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+#footerLink:hover{
+    color: rgb(220, 222, 91);
+}
+
+#userExpDiv{
+    width: auto;
+    height: 450px;
+    position: relative;
+}
+
+#testimonialsDiv{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#userTestimonials{
+    border: 2px solid black;
+    width: 300px;
+    height: 305px;
+    text-align: center;
+    border-top: 20px solid rgb(18, 125, 206);
+    border-bottom: 20px solid rgb(18, 125, 206);
+}
+
+#userTestimonials:hover{
+    box-shadow: 15px 15px;
+    border-left: 0px;
+}
+
+
+.text, .userName, .userRole{
+    margin: 10px;
+}
+
+.userName{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#quoteDiv{
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+#titleDiv{
+    display: flex;
+    justify-content: center;
+}
+
+#titleForTestimonials{
+    font-size: 75px;
+    font-family: monospace;
+}
+
+.checked {
+    color: orange;
+}
+

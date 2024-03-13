@@ -1,0 +1,120 @@
+#navMenu{
+    height: auto;
+    width: auto;
+    margin: 0px;
+    display: inline;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#navContainer{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(18, 125, 206);
+}
+
+#navLinks{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+}
+
+#navLinks:hover{
+    color: rgb(220, 222, 91);
+}
+
+#contactDiv{
+    background-image: url("../../Images/ContactUs.jpg");
+    width: auto;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+#messageDiv{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contactText{
+    font-size: 70px;
+    font-weight: bold;
+}
+
+#meetUsMessageDiv{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    position: relative;
+}
+
+#contactInfoDiv{
+    display: flex;
+    justify-content:space-around;
+}
+
+#phoneNumber, #mailDiv, #addressDiv{
+    display: block;
+}
+
+#greetingMess, #messadeDirectlyMessage{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+#map{
+    width: 500px;
+    height: 300px;
+}
+
+#contactFormDiv{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+#message{
+    width: 210px;
+    height: 80px;
+}
+
+#message, #firstName{
+    margin: 5px;
+}
+
+#submitBtn{
+    margin: 30px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(18, 125, 206);
+    height: 55px;
+    align-items: center;
+}
+
+#footerLink{
+    padding: 5px;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+#footerLink:hover{
+    color: rgb(220, 222, 91);
+}
+
